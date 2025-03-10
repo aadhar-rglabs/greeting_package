@@ -2,9 +2,9 @@
 
 namespace Aadhar\Greeting;
 
-use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
-class GreetingServiceProvider extends ServiceProvider
+class GreetingServiceProvider extends BaseServiceProvider
 {
     public function register()
     {
