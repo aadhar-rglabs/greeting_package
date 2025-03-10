@@ -1,0 +1,24 @@
+{
+    "name": "aadha/laravel_greeting",
+    "description": "Laravel Greeting Package",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Aadhar\\LaravelGreeting\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Aadhar gaur",
+            "email": "aadhar.g@rglabs.net"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Aadhar\\Greeting\\GreetingServiceProvider"
+            ]
+        }
+    },
+    "require": {}
+}
