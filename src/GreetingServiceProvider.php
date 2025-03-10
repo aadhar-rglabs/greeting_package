@@ -1,21 +1,29 @@
 <?php
-
 namespace Aadhar\Greeting;
 
-use Illuminate\Support\ServiceProvider as BaseServiceProvider;
+use Illuminate\Support\ServiceProvider;
 
-class GreetingServiceProvider extends BaseServiceProvider
+class GreetingServiceProvider extends ServiceProvider
 {
+    /**
+     * Register any application services.
+     *
+     * @return void
+     */
     public function register()
     {
         $this->app->singleton('greet', function ($app) {
-            return new Greet();
+            return new GreetingService();
         });
     }
 
-
+    /**
+     * Bootstrap any application services.
+     *
+     * @return void
+     */
     public function boot()
     {
-        // Publish configuration, routes, etc. here
+        //
     }
 }
